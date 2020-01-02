@@ -1,0 +1,982 @@
+@charset "UTF-8";
+/*If you want to post these css code on other website, please type my name and codepen link behind the code. Thanks :) */
+/*如要轉出codepen外的網站，請附上作者名稱，以及這裡的網址，感謝配合 :) */
+/*Created by 87penginnouta December 30, 2019*/
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two&display=swap");
+* {
+  /*border: solid 1px $y0;*/
+  font-family: "Lobster Two", cursive;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #362e2b;
+}
+
+body {
+  overflow: hidden;
+}
+
+.corner {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  top: 0;
+  background: #638c0b;
+}
+
+.corner.left {
+  left: 2.5%;
+}
+
+.corner.right {
+  right: 2.5%;
+}
+
+.bar {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  background: #638c0b;
+}
+
+.bar.top {
+  top: 2.5%;
+}
+
+.bar.bottom {
+  bottom: 2.5%;
+}
+
+.title {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.container {
+  display: flex;
+  /*flex-flow: row wrap;*/
+}
+
+/*Kagami Mochi*/
+.kagami_mochi {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  /*background: $b0;*/
+  transform: translate(-50%, -50%);
+}
+
+.table {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 77.5%;
+  left: 50%;
+  background: #d1c0a5;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+.table:before {
+  content: "";
+  position: absolute;
+  width: 101%;
+  left: -0.5%;
+  top: -0.05%;
+  height: 5%;
+  background: #362e2b;
+  margin: 0;
+  padding: 0;
+}
+
+.hole {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background: #362e2b;
+  top: 60%;
+  left: 50%;
+  border-radius: 30% 30% 50% 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hole:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 20px;
+  background: #362e2b;
+  top: 5%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shadow {
+  position: absolute;
+  background: #638c0b;
+  width: 30%;
+  height: 3%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ttt {
+  position: absolute;
+  width: 50%;
+  height: 5%;
+  top: 62.5%;
+  left: 50%;
+  background: #d1c0a5;
+  transform: translate(-50%, -50%);
+}
+
+.mochi {
+  position: absolute;
+  background: #ffffff;
+}
+
+.mochi.big {
+  width: 40%;
+  height: 25%;
+  top: 58%;
+  left: 50%;
+  border-radius: 50% 50% 50% 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mochi.big:before {
+  content: "";
+  position: absolute;
+  background: #362e2b;
+  width: 100%;
+  height: 5%;
+  top: 55%;
+}
+
+.ttt:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  bottom: -99.5%;
+  left: 5.25%;
+  background: #362e2b;
+  margin: 0;
+  padding: 0;
+}
+
+.ttt:after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  bottom: -99.5%;
+  right: 5.25%;
+  background: #362e2b;
+  margin: 0;
+  padding: 0;
+}
+
+.mochi.small {
+  width: 30%;
+  height: 20%;
+  top: 46%;
+  left: 50%;
+  border-radius: 50% 50% 50% 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line {
+  position: absolute;
+  width: 30%;
+  height: 1%;
+  top: 49.5%;
+  left: 50%;
+  background: #e60012;
+  border-radius: 0 0 50% 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+.ribbon {
+  position: absolute;
+  background: #e60012;
+  width: 2%;
+  height: 0.5%;
+  top: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.ribbon.left {
+  left: 48%;
+  transform: rotate(-60deg);
+}
+
+.ribbon.right {
+  right: 48%;
+  transform: rotate(45deg);
+}
+
+.rrr {
+  position: absolute;
+  background: #e60012;
+  width: 3%;
+  height: 3%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+}
+
+.rrr.left {
+  left: 47%;
+  border-radius: 40% 50% 50% 40%;
+  transform: rotate(45deg);
+}
+
+.rrr.left:before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  top: 18%;
+  left: 12%;
+  background: #ffffff;
+  border-radius: 40% 50% 50% 40%;
+}
+
+.rrr.right {
+  left: 49.5%;
+  border-radius: 50% 40% 40% 50%;
+  transform: rotate(-45deg);
+}
+
+.rrr.right:before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  top: 18%;
+  left: 12%;
+  background: #ffffff;
+  border-radius: 50% 40% 40% 50%;
+}
+
+.paper {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 66.5%;
+  left: 50%;
+  background: transparent;
+  border-bottom: 80px solid #e60012;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.ppp {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 65.75%;
+  left: 50%;
+  background: transparent;
+  border-bottom: 70px solid #ffffff;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.rope {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #e60012;
+  transform: translate(-50%, -50%);
+  top: 61%;
+}
+
+.rope.left {
+  left: 28%;
+  transform: rotate(60deg);
+  box-shadow: 30px 30px #ffffff, 60px 60px #e60012;
+}
+
+.rope.right {
+  right: 28%;
+  transform: rotate(-60deg);
+  box-shadow: -30px 30px #ffffff, -60px 60px #e60012;
+}
+
+.orange {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top: 34%;
+  left: 50%;
+  background: #f39800;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.eye {
+  position: absolute;
+  width: 8%;
+  height: 8%;
+  background: #362e2b;
+  top: 15%;
+  border-radius: 50%;
+}
+
+.eye.left {
+  left: 25%;
+  animation: l 5s infinite alternate;
+}
+
+.eye.right {
+  right: 50%;
+  animation: r 5s infinite alternate;
+}
+
+.leaf {
+  position: absolute;
+  background: #638c0b;
+  width: 5%;
+  height: 5%;
+  top: 23.5%;
+  transform: translate(-50%, -50%);
+}
+
+.leaf.left {
+  left: 44.5%;
+  border-radius: 2% 50% 2% 50%/2% 100% 2% 100%;
+  transform: rotate(180deg);
+}
+
+.leaf.right {
+  right: 44.5%;
+  border-radius: 50% 2% 50% 2%/100% 2% 100% 2%;
+  transform: rotate(180deg);
+}
+
+/*soraru*/
+.sora {
+  position: absolute;
+  width: 12.5%;
+  height: 40%;
+  top: 70%;
+  left: 20%;
+  /*background: $y0;*/
+  transform: translate(-50%, -50%);
+}
+
+.so {
+  position: absolute;
+  background: #ffffff;
+  left: 50%;
+  border-radius: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.so.big {
+  width: 100%;
+  height: 50%;
+  top: 75%;
+}
+
+.so.small {
+  width: 90%;
+  height: 50%;
+  top: 40%;
+  animation: shoo 2s infinite;
+}
+
+.circle {
+  position: absolute;
+  width: 10%;
+  height: 30%;
+  background: #ffffff;
+  top: 25%;
+  border-radius: 40%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  box-shadow: 2px 1px #362e2b;
+}
+
+.circle.circle6 {
+  left: 16%;
+}
+
+.circle.circle5 {
+  left: 20%;
+}
+
+.circle.circle4 {
+  left: 32%;
+}
+
+.circle.circle3 {
+  left: 36%;
+}
+
+.circle.circle2 {
+  left: 48%;
+}
+
+.circle.circle1 {
+  left: 52%;
+}
+
+.circle:before {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 15%;
+  background: #ffffff;
+  bottom: -5%;
+}
+
+.cc {
+  position: absolute;
+  width: 10%;
+  height: 30%;
+  background: #ffffff;
+  top: 27%;
+  border-radius: 40%;
+  transform: translate(-50%, -50%) rotate(150deg);
+  box-shadow: -2px -2px #362e2b;
+}
+
+.cc.cc1 {
+  left: 72%;
+}
+
+.cc.cc2 {
+  left: 68%;
+}
+
+.cc:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 8%;
+  background: #ffffff;
+  top: -6%;
+}
+
+.so_eye {
+  position: absolute;
+  width: 10%;
+  height: 8%;
+  background: #362e2b;
+  top: 50%;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: translate(-50%, -50%);
+}
+
+.so_eye.left {
+  left: 30%;
+}
+
+.so_eye.right {
+  left: 70%;
+}
+
+.so_eye:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  background: #362e2b;
+  left: -10%;
+}
+
+.hat {
+  position: absolute;
+  width: 25%;
+  height: 15%;
+  background: #d1c0a5;
+  top: 15%;
+  left: 80%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  animation: sho 2s infinite;
+}
+
+.scarf {
+  position: absolute;
+  width: 90%;
+  height: 16%;
+  background: #d1c0a5;
+  top: 58%;
+  left: 50%;
+  border-radius: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.scarf:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 150%;
+  background: #d1c0a5;
+  top: 90%;
+  left: 70%;
+  border-radius: 0 0 50% 50%;
+}
+
+.shadowww {
+  position: absolute;
+  width: 90%;
+  height: 10%;
+  background: #638c0b;
+  left: 50%;
+  top: 100%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*mafumafu*/
+.mafu {
+  position: absolute;
+  width: 12.5%;
+  height: 40%;
+  top: 70%;
+  left: 80%;
+  /*background: $y0;*/
+  transform: translate(-50%, -50%);
+}
+
+.ma {
+  position: absolute;
+  background: #ffffff;
+  left: 50%;
+  border-radius: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.ma.big {
+  width: 100%;
+  height: 50%;
+  top: 75%;
+}
+
+.ma.small {
+  width: 90%;
+  height: 50%;
+  top: 40%;
+  animation: shoo 2s infinite;
+}
+
+.chick {
+  position: absolute;
+  background: #d1c0a5;
+  width: 15%;
+  height: 15%;
+  top: 52%;
+  border-radius: 50%;
+  /*box-shadow: 0px 0px 10px $b1;*/
+  transform: translate(-50%, -50%);
+}
+
+.chick.left {
+  left: 25%;
+}
+
+.chick.right {
+  left: 75%;
+}
+
+.ma_eye {
+  position: absolute;
+  background: #362e2b;
+  width: 3%;
+  height: 12%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.ma_eye.left {
+  left: 28%;
+}
+
+.ma_eye.right {
+  left: 72%;
+}
+
+.kuchi {
+  position: absolute;
+  background: #362e2b;
+  width: 15%;
+  height: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kuchi:before {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  width: 80%;
+  height: 75%;
+  left: 50%;
+  top: 52.5%;
+  transform: translate(-50%, -50%);
+}
+
+.ku {
+  position: absolute;
+  width: 10%;
+  height: 3%;
+  background: #362e2b;
+  top: 53%;
+  left: 47.5%;
+  transform: translate(-50%, -50%);
+}
+
+.ku:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background: #ffffff;
+  top: 100%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+/*hanabi*/
+.firework {
+  position: absolute;
+  display: flex;
+  width: 20%;
+  height: 100%;
+  background: #362e2b;
+}
+
+.firework.f1 {
+  left: 0;
+  animation: explosion 10s infinite;
+}
+
+.firework.f2 {
+  left: 20%;
+  top: 10%;
+  transform: scale(0.5);
+  animation: explosion 15s infinite;
+}
+
+.firework.f3 {
+  left: 60%;
+  top: 15%;
+  transform: scale(0.5);
+  animation: explosion 5s infinite;
+}
+
+.firework.f4 {
+  left: 80%;
+  top: 5%;
+  animation: explosion 10s infinite;
+}
+
+.firework.f5 {
+  left: 50%;
+  top: -10%;
+  transform: scale(0.25);
+  animation: explosion 5s infinite;
+}
+
+.firework.f6 {
+  left: 30%;
+  top: -20%;
+  transform: scale(0.25);
+  animation: explosion 15s infinite;
+}
+
+.bbb {
+  position: absolute;
+  width: 2%;
+  height: 5%;
+  background: #f39800;
+}
+
+.bbb.b1 {
+  transform: translate(-50%, -50%) rotate(90deg);
+  top: 30%;
+  left: 65%;
+  animation: bbbbb 1s infinite;
+}
+
+.bbb.b2 {
+  transform: translate(-50%, -50%) rotate(180deg);
+  top: 25%;
+  left: 50%;
+  animation: bbbbb 1s infinite;
+}
+
+.bbb.b3 {
+  transform: translate(-50%, -50%) rotate(270deg);
+  top: 30%;
+  left: 35%;
+  animation: bbbbb 1s infinite;
+}
+
+.bbb.b4 {
+  transform: translate(-50%, -50%) rotate(360deg);
+  top: 35%;
+  left: 50%;
+  animation: bbbbb 1s infinite;
+}
+
+.www {
+  position: absolute;
+  width: 2%;
+  height: 5%;
+  background: #ffffff;
+}
+
+.www.w1 {
+  transform: translate(-50%, -50%) rotate(45deg);
+  top: 25%;
+  left: 65%;
+  animation: bbbbb 1s  infinite;
+}
+
+.www.w2 {
+  transform: translate(-50%, -50%) rotate(135deg);
+  top: 35%;
+  left: 65%;
+  animation: bbbbb 1s  infinite;
+}
+
+.www.w3 {
+  transform: translate(-50%, -50%) rotate(225deg);
+  top: 35%;
+  left: 35%;
+  animation: bbbbb 1s  infinite;
+}
+
+.www.w4 {
+  transform: translate(-50%, -50%) rotate(315deg);
+  top: 25%;
+  left: 35%;
+  animation: bbbbb 1s  infinite;
+}
+
+/*animation*/
+@keyframes l {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: 25%;
+  }
+  60% {
+    height: 8%;
+  }
+  70% {
+    height: 2%;
+  }
+  90% {
+    height: 8%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+@keyframes r {
+  0% {
+    right: 20%;
+  }
+  50% {
+    right: 50%;
+  }
+  60% {
+    height: 8%;
+  }
+  70% {
+    height: 2%;
+  }
+  90% {
+    height: 8%;
+  }
+  100% {
+    right: 20%;
+  }
+}
+@keyframes shoo {
+  50% {
+    top: 39%;
+  }
+}
+@keyframes sho {
+  50% {
+    top: 14%;
+  }
+}
+@keyframes uppp {
+  0% {
+    top: 150%;
+    opacity: 0;
+  }
+  50% {
+    top: 50%;
+    opacity: 1;
+  }
+  55% {
+    height: 5%;
+  }
+  60% {
+    height: 2%;
+  }
+  65% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    top: 0%;
+    opacity: 0;
+  }
+}
+@keyframes bbbbb {
+  0% {
+    height: 0%;
+    opacity: 0;
+  }
+  20% {
+    height: 2%;
+    opacity: 0.5;
+  }
+  50% {
+    height: 5%;
+    opacity: 1;
+  }
+  80% {
+    height: 2%;
+    opacity: 0.5;
+  }
+  100% {
+    height: 0%;
+    opacity: 0;
+  }
+}
+@keyframes explosion {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*rwd*/
+@media (min-width: 1200px) {
+  .kagami_mochi {
+    width: 45%;
+  }
+
+  .sora {
+    width: 10%;
+  }
+
+  .mafu {
+    width: 10%;
+  }
+
+  .rrr.left {
+    left: 47.5%;
+  }
+
+  .rrr.right {
+    left: 50%;
+  }
+
+  .paper {
+    top: 66%;
+  }
+
+  .ppp {
+    top: 65.25%;
+  }
+}
+@media (max-width: 800px) {
+  .paper {
+    /*left: 37.5%;*/
+    border-bottom: 80px solid #e60012;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    order: 2;
+  }
+
+  .ppp {
+    /*left: 38.75%;*/
+    background: transparent;
+    border-bottom: 70px solid #ffffff;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+  }
+}
+@media (max-width: 600px) {
+  .paper {
+    /*left: 40%;*/
+    border-bottom: 80px solid #e60012;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    order: 2;
+  }
+
+  .ppp {
+    /*left: 41.5%;*/
+    background: transparent;
+    border-bottom: 70px solid #ffffff;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+
+  .rrr.left {
+    width: 2%;
+    height: 3%;
+    left: 48%;
+    top: 47.5%;
+    transform: rotate(-40deg);
+  }
+
+  .rrr.right {
+    width: 2%;
+    height: 3%;
+    right: 48%;
+    top: 47.5%;
+    transform: rotate(40deg);
+  }
+
+  .rrr.left:before {
+    width: 50%;
+    height: 60%;
+    top: 15%;
+    left: 25%;
+  }
+
+  .rrr.right:before {
+    width: 50%;
+    height: 60%;
+    top: 15%;
+    left: 25%;
+  }
+}
+/*Created by 87penginnouta December 30, 2019*/
